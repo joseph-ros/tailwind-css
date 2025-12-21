@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+        <script>
+      tailwind.config = {
+        darkMode: "selector",
+        theme: {
+          extend: {
+            transitionDuration: {
+              900: "900ms",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Tailwind Test</title>
+  </head>
+  <body class="flex flex-col items-center justify-center h-screen transition ease-in bg-slate-200 dark:bg-slate-800">
+    <div class="text-center">
+      <button class="px-8 py-4 transition rounded bg-slate-300 text-slate-800 hover:bg-slate-900 hover:text-white dark:bg-slate-900 dark:text-slate-300 dark:hover:bg-slate-300 dark:hover:text-slate-900 duration-900">Change Theme</button>
+    </div>
+  </body>
+  <script>
+    document.querySelector("button").addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+</html>
