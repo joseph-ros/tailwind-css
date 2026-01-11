@@ -8,40 +8,30 @@
     <script src="./tailwind.config.js"></script>
         <script>
       tailwind.config = {
-        darkMode: "selector",
-        theme: {
-          extend: {
-            transitionDuration: {
-              900: "900ms",
-            },
-            animation: {
-              travel: "travel 4s alternate infinite",
-            },
-            keyframes: {
-              travel: {
-                "0%": { transform: "translate(0)" },
-                "14%": { transform: "translate(200px, 0px)" },
-                "28%": { transform: "translate(200px, -300px)" },
-                "42%": { transform: "translate(-700px, -300px)" },
-                "56%": { transform: "translate(-700px, 300px)" },
-                "70%": { transform: "translate(200px, 300px)" },
-                "84%": { transform: "translate(200px, 0px)" },
-                "100%": { transform: "translate(0)" },
-              },
-            },
-          },
-        },
+        darkMode: "selector"
       };
     </script>
     <title>Test</title>
   </head>
   <body class="flex flex-col items-center justify-center h-screen transition ease-in bg-slate-200 dark:bg-slate-800">
+    <!-- Dark/Light Toggle Button -->
     <div class="absolute top-8 right-16">
       <input type="checkbox" class="bg-slate-300 dark:bg-slate-900 appearance-none h-8 w-16 rounded-full relative before:absolute before:h-8 before:w-8 before:bg-slate-900 dark:before:bg-slate-300 before:content-[''] before:rounded-full before:scale-110 checked:before:translate-x-8 checked:before:transition-all checked:before:duration-500 before:transition-all before:duration-500">
     </div>
-    <div class="flex justify-center items-center flex-col transition animate-travel">
-        <div class="h-24 w-24 rounded-3xl bg-orange-500 dark:bg-lime-500 transition-all duration-500 animate-pulse"></div>
-    </div>
+
+    <!-- Card 1 -->
+    <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-900">
+      <img class="w-full h-24 md:w-48 md:h-auto mx-auto object-cover" src="/.img/one-1.jpg" alt="Koenigsegg One:1" width="384" height="512">
+      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+        <blockquote>
+          <p class="text-lg font-medium w-full max-w-md dark:text-white">The Koenigsegg One:1 was a groundbreaking, road-legal production car, famous for achieving a previously thought impossible 1:1 power-to-weight ratio—hence its name. It was also the world's first production megacar, generating one megawatt of power. The vehicle raised performance expectations with innovative solutions that enhanced track capabilities and top speed while maintaining everyday usability and aesthetics.</p>
+        </blockquote>
+        <figcaption class="font-medium">
+          <div class="text-sky-500 dark:text-sky-400">Christian von Koenigsegg</div>
+          <div class="text-slate-700 dark:text-slate-500">Founder & CEO, Koenigsegg Automotive AB</div>
+        </figcaption>
+      </div>
+    </figure>
   </body>
   <script>
     document.querySelector("input").addEventListener("click", () => {
