@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div><a href="./index.html"><img src="./images/favicon.jpeg" alt="ShopSphere" class="w-16 object-fit"></a></div>
+            <nav class="hidden md:flex space-x-6">
+                <div class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-blue-600">Categories</a>
+                    <div class="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 mb-2">Electronics</h3>
+                            <ul class="space-y-1">
+                                <li><a href="#smartphones" class="text-blue-600">Smartphones</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Laptops</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Headphones</a></li>
+                            </ul>
+                            <h3 class="font-semibold text-gray-800 mt-4 mb-2">Men & Women's Clothing</h3>
+                            <ul class="space-y-1">
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Men's Clothing</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Women's Clothing</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Shoes</a></li>
+                            </ul>
+                            <h3 class="font-semibold text-gray-800 mt-4 mb-2">Toys & Accessories</h3>
+                            <ul class="space-y-1">
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Toys</a></li>
+                                <li><a href="#" class="text-gray-600 hover:text-blue-600">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Deals</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Vendors</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search products..." class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Search</button>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Cart</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Account</a>
+            </div>
+        </div> 
+    </header>
+    <section class="bg-blue-600 text-white py-16" id="smartphones">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Smartphones</h1>
+        </div>
+    </section>
+
+    <div class="container mx-auto flex mt-4">
+        <!-- Sidebar with Price Filters -->
+        <aside class="w-1/4 p-4 bg-white rounded shadow">
+            <h1 class="text-2xl text-center font-bold mb-7">Filters</h1>
+            <h2 class="text-lg font-semibold mb-4">Price</h2>
+            <div class="mb-4">
+                <input type="range" id="priceRange" min="100" max="2500" value="2500" class="w-full">
+                <div class="text-sm font-medium mt-2 text-blue-600">Price: $<span id="priceDisplay">2500</span></div>
+            </div>
+            <h2 class="text-lg font-semibold mb-4">Brands</h2>
+            <div class="mb-4">
+                <label><input type="checkbox" id="allCompanies" checked> All</label><br>
+                <label><input type="checkbox" class="company" value="Apple"> Apple</label><br>
+                <label><input type="checkbox" class="company" value="Samsung"> Samsung</label><br>
+                <label><input type="checkbox" class="company" value="Google"> Google</label><br>
+                <label><input type="checkbox" class="company" value="OnePlus"> OnePlus</label><br>
+                <label><input type="checkbox" class="company" value="Xiaomi"> Xiaomi</label><br>
+                <label><input type="checkbox" class="company" value="Sony"> Sony</label><br>
+                <label><input type="checkbox" class="company" value="Huawei"> Huawei</label><br>
+                <label><input type="checkbox" class="company" value="Asus"> Asus</label><br>
+                <label><input type="checkbox" class="company" value="Motorola"> Motorola</label><br>
+                <label><input type="checkbox" class="company" value="Oppo"> Oppo</label><br>
+                <label><input type="checkbox" class="company" value="Vivo"> Vivo</label><br>
+                <label><input type="checkbox" class="company" value="Realme"> Realme</label><br>
+                <label><input type="checkbox" class="company" value="Infinix"> Infinix</label><br>
+                <label><input type="checkbox" class="company" value="Tecno"> Tecno</label><br>
+            </div>
+            <button id="applyFiltersBtn" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Apply Filters</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="w-3/4 p-4">
+            <div class="grid grid-cols-3 gap-4" id="phoneGrid">
+                <!-- Phone Cards -->
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="1299" data-company="Apple">
+                    <img src="./images/phone-1.png" alt="Phone 1" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">iPhone 17 Pro Max</h3>
+                    <p class="text-gray-600">$1299</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="1199" data-company="Samsung">
+                    <img src="./images/phone-2.png" alt="Phone 2" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Samsung Galaxy S24 Ultra</h3>
+                    <p class="text-gray-600">$1199</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="999" data-company="Google">
+                    <img src="./images/phone-3.png" alt="Phone 3" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Google Pixel 9 Pro</h3>
+                    <p class="text-gray-600">$999</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="899" data-company="OnePlus">
+                    <img src="./images/phone-4.png" alt="Phone 4" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">OnePlus 13 Pro</h3>
+                    <p class="text-gray-600">$899</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="1099" data-company="Xiaomi">
+                    <img src="./images/phone-5.png" alt="Phone 5" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Xiaomi 15 Ultra</h3>
+                    <p class="text-gray-600">$1099</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="1299" data-company="Sony">
+                    <img src="./images/phone-6.png" alt="Phone 6" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Sony Xperia 1 VI</h3>
+                    <p class="text-gray-600">$1299</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="1199" data-company="Huawei">
+                    <img src="./images/phone-7.png" alt="Phone 7" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Huawei Mate 70 Pro</h3>
+                    <p class="text-gray-600">$1199</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="999" data-company="Asus">
+                    <img src="./images/phone-8.png" alt="Phone 8" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Asus ROG Phone 9</h3>
+                    <p class="text-gray-600">$999</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="899" data-company="Apple">
+                    <img src="./images/phone-9.png" alt="Phone 9" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">iPhone 17</h3>
+                    <p class="text-gray-600">$899</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="799" data-company="Motorola">
+                    <img src="./images/phone-10.png" alt="Phone 10" class="w-full mb-2 pt-5 h-[25rem] object-cover">
+                    <h3 class="text-lg font-semibold pt-11">Motorola Edge 60 Ultra</h3>
+                    <p class="text-gray-600">$799</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="899" data-company="Samsung">
+                    <img src="./images/phone-11.png" alt="Phone 11" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Samsung Galaxy S24</h3>
+                    <p class="text-gray-600">$899</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="1099" data-company="Oppo">
+                    <img src="./images/phone-12.png" alt="Phone 12" class="w-full mb-2 h-[28rem] object-cover">
+                    <h3 class="text-lg font-semibold">Oppo Find X8 Pro</h3>
+                    <p class="text-gray-600">$1099</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="999" data-company="Vivo">
+                    <img src="./images/phone-13.png" alt="Phone 13" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Vivo X200 Pro</h3>
+                    <p class="text-gray-600">$999</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="799" data-company="Google">
+                    <img src="./images/phone-14.png" alt="Phone 14" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Google Pixel 9</h3>
+                    <p class="text-gray-600">$799</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="699" data-company="Realme">
+                    <img src="./images/phone-15.png" alt="Phone 15" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Realme GT 7 Pro</h3>
+                    <p class="text-gray-600">$699</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="499" data-company="Infinix">
+                    <img src="./images/phone-16.png" alt="Phone 16" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Infinix Zero 50</h3>
+                    <p class="text-gray-600">$499</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="399" data-company="Tecno">
+                    <img src="./images/phone-17.png" alt="Phone 17" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Tecno Phantom X3 Pro</h3>
+                    <p class="text-gray-600">$399</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="349" data-company="Samsung">
+                    <img src="./images/phone-18.png" alt="Phone 18" class="w-full h-[20rem] object-contain mb-2">
+                    <h3 class="text-lg font-semibold">Samsung Galaxy A50</h3>
+                    <p class="text-gray-600">$349</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="799" data-company="Apple">
+                    <img src="./images/phone-19.png" alt="Phone 19" class="w-full h-[20rem] object-contain mb-2">
+                    <h3 class="text-lg font-semibold">iPhone 16</h3>
+                    <p class="text-gray-600">$799</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="499" data-company="Google">
+                    <img src="./images/phone-20.png" alt="Phone 20" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Google Pixel 8a</h3>
+                    <p class="text-gray-600">$499</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="699" data-company="OnePlus">
+                    <img src="./images/phone-21.png" alt="Phone 21" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">OnePlus 12</h3>
+                    <p class="text-gray-600">$699</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="799" data-company="Xiaomi">
+                    <img src="./images/phone-22.png" alt="Phone 22" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Xiaomi 14 Ultra</h3>
+                    <p class="text-gray-600">$799</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="599" data-company="Sony">
+                    <img src="./images/phone-23.png" alt="Phone 23" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Sony Xperia 10 VI</h3>
+                    <p class="text-gray-600">$599</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow phone-card" data-price="899" data-company="Huawei">
+                    <img src="./images/phone-24.png" alt="Phone 24" class="w-full mb-2">
+                    <h3 class="text-lg font-semibold">Huawei P70 Pro</h3>
+                    <p class="text-gray-600">$899</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const priceRange = document.getElementById('priceRange');
+        const priceDisplay = document.getElementById('priceDisplay');
+        const applyFiltersBtn = document.getElementById('applyFiltersBtn');
+        const phoneCards = document.querySelectorAll('.phone-card');
+
+        priceRange.addEventListener('input', function() {
+            priceDisplay.textContent = this.value;
+        });
+
+        applyFiltersBtn.addEventListener('click', function() {
+            const maxPrice = parseInt(priceRange.value);
+            const allChecked = document.getElementById('allCompanies').checked;
+            const checkedCompanies = allChecked ? [] : Array.from(document.querySelectorAll('.company:checked')).map(cb => cb.value);
+            
+            phoneCards.forEach(card => {
+                const cardPrice = parseInt(card.dataset.price);
+                const cardCompany = card.dataset.company;
+                const priceMatch = cardPrice <= maxPrice;
+                const companyMatch = allChecked || checkedCompanies.includes(cardCompany);
+                if (priceMatch && companyMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
