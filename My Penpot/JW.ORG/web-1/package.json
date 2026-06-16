@@ -1,0 +1,14 @@
+{
+  "name": "web-1",
+  "version": "1.0.0",
+  "description": "This portfolio delivers fast, secure, and production-ready web applications built on modern architecture. Explore the codebase and interactive live deployments below to see performance-driven development in action.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joseph Ros",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^4.3.1"
+  }
+}
