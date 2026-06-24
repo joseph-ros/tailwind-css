@@ -340,6 +340,86 @@
         </figure>
       </section>
   </main>
+  <footer
+      class="p-6 flex flex-col gap-y-10 bg-primary text-text md:p-16 lg:gap-x-10 lg:flex-row *:basis-full"
+    >
+      <div class="flex flex-col gap-y-5">
+        <figure>
+          <img src="images/form.jpg" alt="" />
+        </figure>
+
+        <form
+          class="flex flex-col gap-y-2 *:px-4 *:py-2 *:rounded *:outline-none h-full"
+        >
+          <input
+            class="h-12 bg-accent text-text placeholder:text-text/80 sm:h-16"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            class="h-12 bg-accent text-text placeholder:text-text/80 sm:h-16"
+            type="email"
+            placeholder="Email"
+          />
+          <textarea
+            class="h-48 bg-accent text-text placeholder:text-text/80 lg:h-full"
+            placeholder="Message"
+          ></textarea>
+          <input
+            class="h-12 border-2 cursor-pointer border-accent text-text sm:h-16"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </div>
+
+      <div class="flex flex-col gap-y-5 lg:self-center xl:gap-y-10 *:space-y-2">
+        <div>
+          <h6 class="relative pl-6 text-sm uppercase before before:h-1 before:w-4 before:bg-accent before:top-2/4 before:-left-0 lg:text-lg">Contact</h6>
+          <h2 class="text-2xl font-bold capitalize lg:text-3xl">Unofficial Contact Information
+          </h2>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora corporis eveniet, doloribus impedit fuga eum accusamus Lorem</p>
+
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+          <div class="grid grid-cols-[112px_1fr] grid-rows-2 gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="/test-images/contact-1.png" alt="Phone Icon" />
+            </figure>
+
+            <h6 class="self-end text-accent">Phone Number</h6>
+            <p>123-234-1234</p>
+          </div>
+
+          <div class="grid grid-cols-[112px_1fr] grid-rows-2 gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="/test-images/contact-2.png" alt="Email Icon" />
+            </figure>
+
+            <h6 class="self-end text-accent">Email address</h6>
+            <p>cool@cool.com</p>
+          </div>
+
+          <div class="grid grid-cols-[112px_1fr] grid-rows-2 gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="/test-images/contact-3.png" alt="Website Icon" />
+            </figure>
+
+            <h6 class="self-end text-accent">Websites</h6>
+            <p>www.cool.com</p>
+          </div>
+
+          <div class="grid grid-cols-[112px_1fr] grid-rows-2 gap-x-5 gap-y-2">
+            <figure class="row-span-2">
+              <img class="w-28" src="/test-images/contact-4.png" alt="Address Icon" />
+            </figure>
+            <h6 class="self-end text-accent">Address</h6>
+            <p>177A Bleecker Street, NY</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 <script src="./app.js"></script>
 </html>
