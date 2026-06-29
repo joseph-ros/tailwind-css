@@ -3,9 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link rel="icon" type="image/svg" href="images/music.svg"/>
+    <link rel="stylesheet" href="./output/output.css"/>
     <title>Daft Punk</title>
 </head>
-<body>
+<body class="text-white 2xl:max-w-screen-2xl 2xl:mx-auto 2xl:bg-blue selection:bg-blue selection:text-golden">
+    <header class="p-4 sm:p-8 md:p-12 lg:p-16 h-screen grid gap-y-6 sm:grid-rows-[min-content_1fr]" style="background: linear-gradient(to top,rgba(10 33 78 / 0.9),rgba(10 33 78 / 0.4) 90%),url('images/showcase.jpg');background-position: center;background-size: cover;">
+        <nav class="flex justify-between">
+            <a class="text-golden relative after after:h-[2px] after:w-1/4 after:bg-blue after:bottom-2.5 self-start after:left-2/4 after:-translate-x-2/4 after:-rotate-45 after:rounded" href="#">Daft Punk</a>
+            
+            <ul class="fixed top-0 left-0 z-50 flex flex-col items-center justify-center w-screen h-screen gap-5 transition-transform duration-300 ease-in-out origin-bottom scale-y-0 bg-golden nav sm:static sm:scale-y-100 sm:flex-row sm:h-auto sm:w-auto sm:bg-transparent">
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">Home</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">About</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">Discography</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">Band</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">Tours</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">Gallery</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">News</a>
+                </li>
+                <li class="relative after after:transition after:h-2 after:w-3 after:bg-blue after:rounded after:bottom-1/4 after:-right-6 after:animate-spin before before:transition before:h-2 before:w-3 before:bg-blue before:rounded before:bottom-2/4 before:-right-6 before:animate-spinRev after:opacity-0 before:opacity-0 hover:after:opacity-100 hover:before:opacity-100 sm:after:bg-golden sm:before:bg-golden sm:after:right-0 sm:after:-bottom-2 sm:before:left-0 sm:before:-bottom-2">
+                    <a class="text-lg text-white transition-colors hover:text-blue sm:hover:text-golden lg:text-2xl" href="#">Contact</a>
+                </li>
+            </ul>
+
+            <div class="hamburger w-8 fixed top-5 right-4 flex flex-col gap-y-1.5 justify-center items-center cursor-pointer z-50 sm:hidden">
+                <div class="h-[2px] w-full bg-white rounded transition-transform"></div>
+                <div class="h-[2px] w-full bg-white rounded transition-opacity"></div>
+                <div class="h-[2px] w-full bg-white rounded transition-transform"></div>
+            </div>
+        </nav>
+
+        <section class="space-y-5 text-center sm:place-self-center md:relative md:before md:before:-top-28 md:before:left-2/4 md:before:-translate-x-2/4 md:before:bg-blue/50 md:before:size-96 md:before:rounded-full md:before:border-8 md:before:border-golden/50 md:before:blur-sm">
+            <h1 class="text-5xl md:text-7xl">Daft Punk Official Website</h1>
+            <p class="text-lg font-semibold md:text-2xl md:font-medium *:text-golden">The official website of <span>Daft Punk</span> where the French EDM beats are <span>fresh</span>, the vibe is <span>electric</span>, and the <span>music</span> never stops.</p>
+        </section>
+    </header>
     
+    <main>
+        <section class="flex flex-col p-4 sm:p-8 md:p-12 lg:p-16 bg-blue gap-y-10">
+            <div class="flex flex-col items-center gap-y-5">
+                <h2 class="text-center text-2xl uppercase font-black sm:text-4xl sm:font-medium relative after after:h-3 after:w-full after:bg-golden after:bottom-0.5 after:left-0 after:-z-[1] z-[1] after:blur-sm px-1">Latest Album</h2>
+
+                <div class="flex flex-col justify-center gap-y-4">
+                    <div>
+                        <p class="text-xl text-center"><span class="uppercase pr-6 relative after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-golden/60 after:-z-[1] z-[1]">Name</span><span class="border-b-2 border-dotted">Daft Punk</span></p>
+                        <p class="text-xl text-center"><span class="uppercase pr-6 relative after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-golden/60 after:-z-[1] z-[1]">From</span><span class="border-b-2 border-dotted">1993 - 2021</span></p>
+                        <p class="text-xl text-center"><span class="uppercase pr-6 relative after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-golden/60 after:-z-[1] z-[1]">Genre</span><span class="border-b-2 border-dotted">Electronic Duo</span></p>
+                        <p class="text-xl text-center"><span class="uppercase pr-6 relative after after:bottom-0.5 after:left-0 after:h-2 after:w-3/4 after:bg-golden/60 after:-z-[1] z-[1]">Styles</span><span class="border-b-2 border-dotted">French Touch</span></p>
+                    </div>
+
+                    <ul class="flex gap-x-2 *:bg-slate/60 *:border *:border-white/60 *:p-2 *:size-6 *:flex *:justify-center *:items-center *:cursor-pointer *:text-xs *:transition-colors hover:*:bg-golden/60">
+                        <li><a href="#"><i class="fa-brands fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google-play"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-amazon"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-cloud"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border border-golden grid grid-cols-[1fr]">
+                <figure>
+                    <img class="w-12" src="images/album.jpg" alt="Album Cover"/>
+                </figure>
+
+                <div class="divide-y divide-golden *:p-4 md:*:px-6 *:flex *:justify-between *:gap-x-2 *:items-center">
+                    <div>
+                        <div class="grid grid-cols-[min-content,1fr] grid-rows-2 gap-x-2 md:gap-x-4">
+                            <i class="fa-solid fa-play text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:pt-2"></i>
+                            <h6 class="text-xs text-golden md:text-xl">Digital Love</h6>
+                            <h6 class="text-xs text-golden md:text-xl">Reload</h6>
+                        </div>
+
+              <div>
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-download"
+                  ></i>
+                  Download</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="grid grid-cols-[min-content,1fr] grid-rows-2 gap-x-2 md:gap-x-4"
+              >
+                <i
+                  class="fa-solid fa-play text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:pt-2"
+                ></i>
+                <h6 class="text-xs text-golden md:text-xl">Da Funk</h6>
+                <h6 class="text-xs text-golden md:text-xl">Reload</h6>
+              </div>
+
+              <div class="flex gap-x-2 md:gap-x-4">
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-music"
+                  ></i>
+                  Lyrics</a
+                >
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-cart-shopping"
+                  ></i>
+                  Purchase</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="grid grid-cols-[min-content,1fr] grid-rows-2 gap-x-2 md:gap-x-4"
+              >
+                <i
+                  class="fa-solid fa-play text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:pt-2"
+                ></i>
+                <h6 class="text-xs text-golden md:text-xl">Get Lucky</h6>
+                <h6 class="text-xs text-golden md:text-xl">Reload</h6>
+              </div>
+
+              <div>
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-download"
+                  ></i>
+                  Download</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="grid grid-cols-[min-content,1fr] grid-rows-2 gap-x-2 md:gap-x-4"
+              >
+                <i
+                  class="fa-solid fa-play text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:pt-2"
+                ></i>
+                <h6 class="text-xs text-golden md:text-xl">Harder, Better, Faster, Stronger</h6>
+                <h6 class="text-xs text-golden md:text-xl">Reload</h6>
+              </div>
+
+              <div>
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-download"
+                  ></i>
+                  Download</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="grid grid-cols-[min-content,1fr] grid-rows-2 gap-x-2 md:gap-x-4"
+              >
+                <i
+                  class="fa-solid fa-play text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:pt-2"
+                ></i>
+                <h6 class="text-xs text-golden md:text-xl">One More Time</h6>
+                <h6 class="text-xs text-golden md:text-xl">Reload</h6>
+              </div>
+
+              <div class="flex gap-x-2 md:gap-x-4">
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-music"
+                  ></i>
+                  Lyrics</a
+                >
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-cart-shopping"
+                  ></i>
+                  Purchase</a
+                >
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="grid grid-cols-[min-content,1fr] grid-rows-2 gap-x-2 md:gap-x-4"
+              >
+                <i
+                  class="fa-solid fa-play text-[8px] col-start-1 col-end-2 row-start-1 row-end-3 pt-1.5 md:text-base md:pt-2"
+                ></i>
+                <h6 class="text-xs text-golden md:text-xl">Around The World</h6>
+                <h6 class="text-xs text-golden md:text-xl">Reload</h6>
+              </div>
+
+              <div class="flex gap-x-2 md:gap-x-4">
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-download"
+                  ></i>
+                  Download</a
+                >
+                <a
+                  class="flex items-center px-3 py-1 text-xs bg-golden md:text-lg md:px-6 text-blue gap-x-2 md:gap-x-4 md:border-2 md:border-white"
+                  href="#"
+                  ><i
+                    class="text-xs md:text-lg md:text-white fa-solid fa-cart-shopping"
+                  ></i>
+                  Purchase</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 </body>
+<script src="./app.js"></script>
 </html>
