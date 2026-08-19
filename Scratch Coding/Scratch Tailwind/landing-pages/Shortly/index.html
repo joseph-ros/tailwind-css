@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="input.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <nav class="container relative p-6 mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-20">
+                <img src="images/logo.svg" alt="Logo"/>
+                <div class="hidden space-x-8 font-bold lg:flex">
+                    <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Features</a>
+                    <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Pricing</a>
+                    <a href="#" class="text-grayishViolet hover:text-veryDarkViolet">Resources</a>
+                </div>
+            </div>
+            <div class="items-center hidden space-x-6 font-bold text-grayishViolet lg:flex">
+                <div class="hover:text-veryDarkViolet">Login</div>
+                <a href="#" class="px-8 py-3 font-bold text-white rounded-full bg-cyan hover:opacity-70">Sign Up</a>
+            </div>
+            <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none" type="button">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+            </div>
+            <div id="menu" class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100">
+                <div class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
+                    <a href="#" class="w-full text-center">Features</a>
+                    <a href="#" class="w-full text-center">Pricing</a>
+                    <a href="#" class="w-full text-center">Resources</a>
+                    <a href="#" class="w-full pt-6 text-center border-t border-gray-400">Login</a>
+                    <a href="#" class="w-full py-3 text-center rounded-full bg-cyan">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="container flex flex-col-reverse p-6 mx-auto lg:flex-row">
+            <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl:mb-52">
+                <h1 class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left">More than just shorter links</h1>
+                <p class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                <div class="mx-auto lg:mx-0">
+                    <a href="#" class="px-10 py-5 text-2xl font-bold text-white rounded-full bg-cyan lg:py-4 hover:opacity-70">Get Started</a>
+                </div>
+            </div>
+            <div class="mx-auto mb-24 md:w-180 lg:mb-0 lg:w-1/2">
+                <img src="images/illustration-working.svg" alt="Human Working On A Computer"/>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
