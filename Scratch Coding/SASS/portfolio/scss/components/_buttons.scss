@@ -20,17 +20,18 @@
     font-size: 1.2rem;
   }
   &-default {
-    background: $green-500;
-    color: $white;
-    &:focus {
-      outline: 0.4rem solid $green-100;
+    background: $white;
+    color: $green-500;
+    border: 4px solid $green-500;
+    padding-bottom: 4rem;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: $green-500;
+      color: $white;
     }
   }
   &-dark {
     background: $black;
     color: $white;
-    &:focus {
-      outline: 0.4rem solid $black-light;
-    }
   }
 }
