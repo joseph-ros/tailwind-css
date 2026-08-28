@@ -4,60 +4,280 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Professional Portfolio</title>
+        <title>My Portfolio</title>
         <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </head>
     <body>
         <nav class="nav">
-    <div class="nav__wrapper">
-        <div class="nav__wrapper__logo">
-            <a href="#header" class="nav__wrapper__logo__brand">My Portfolio</a>
+            <div class="nav__wrapper">
+                <div class="nav__wrapper__logo">
+                    <a href="#header" class="nav__wrapper__logo__brand">My Portfolio</a>
+                </div>
+                <ul class="nav__wrapper__ul">
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#header" class="nav__wrapper__ul__li__a">Home</a>
+                    </li>
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#about" class="nav__wrapper__ul__li__a">About</a>
+                    </li>
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#experience" class="nav__wrapper__ul__li__a">Experience</a>
+                    </li>
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#projects" class="nav__wrapper__ul__li__a">Projects</a>
+                    </li>
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#skills" class="nav__wrapper__ul__li__a">Skills</a>
+                    </li>
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#testimonials" class="nav__wrapper__ul__li__a">Testimonials</a>
+                    </li>
+                    <li class="nav__wrapper__ul__li">
+                        <a href="#blogs" class="nav__wrapper__ul__li__a">Blogs</a>
+                    </li>
+                </ul>
+                <div class="nav__wrapper__toggle"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+        <header class="header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xlg-6 col-lg-6 col-md-12">
+                        <div class="header__data">
+                            <div class="header__data__contents">
+                                <h5 class="header__data__contents__top">Welcome to</h5>
+                                <h1 class="header__data__contents__heading"><b>My Portfolio</b></h1>
+                                <h4 class="header__data__contents__bottom">AWS Certified Secure Portfolio</h4>
+                                <div class="header__data__contents__links">
+                                    <a href="./assets/images/resume_cv.html" class="btn btn-default" target="_blank">Download CV</a>&nbsp;&nbsp;&nbsp;
+                                    <button class="btn btn-dark modal-btn"><b>Hire Me</b></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="modal">
+            <div class="modal__wrapper">
+                <i class="fa-solid fa-xmark modal__wrapper__close"></i>
+                <div class="modal__wrapper__image">
+                    <img src="./assets/images/user-1.jpg" alt="User 1" class="modal__wrapper__image__img">
+                </div>
+                <div class="modal__wrapper__contents">
+                    <h1 class="heading">Why hire me?</h1>
+                    <p class="modal__wrapper__contents__p" style="text-indent: 20px;"><b>Hi! I'm Ollie Chen.</b> I bring a unique combination of adaptability, resilience, and strategic problem-solving to high-pressure environments. My experience balancing complex, fast-paced challenges with daily responsibilities has honed my ability to manage unpredictable situations effectively. I excel at navigating ambiguity, maintaining composure under stress, and delivering results, making me a versatile and dedicated asset to your team.</p>
+                    <div class="modal__wrapper__contents__block">
+                        <span class="modal__wrapper__contents__block__left">Email</span>
+                        <span class="modal__wrapper__contents__block__right">johndoe@gmail.com</span>
+                    </div>
+                    <div class="modal__wrapper__contents__block">
+                        <span class="modal__wrapper__contents__block__left">Phone</span>
+                        <span class="modal__wrapper__contents__block__right">+123 4567 890</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="row items-center">
+                    <div class="col-xlg-6 col-lg-6 col-sm-12">
+                        <div class="about__image">
+                            <img src="./assets/images/large.jpg" alt="Profile Image">
+                            <div class="about__image__small">
+                            <img src="./assets/images/small.jpg" alt="Profile Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xlg-6 col-lg-6 col-sm-12">
+                    <h1 class="heading">Who Am I?</h1>
+                    <div class="about__info">
+                        <p class="about__info__message">I am a versatile vocal artist with a proven track record across leading entertainment platforms. Leveraging my background as a <b>former singer at Spotify</b>, I currently excel as a <b>voice actor for Disney Television Animation</b>, bringing dynamic characters to life through impactful, professional vocal performance.</p>
+                        <div class="about__info__block">
+                            <span class="about__info__block__left">Name</span>
+                            <span class="about__info__block__right">Ollie A. Chen</span>
+                        </div>
+                        <div class="about__info__block">
+                            <span class="about__info__block__left">Date of Birth</span>
+                            <span class="about__info__block__right">October 1, 1999</span>
+                        </div>
+                        <div class="about__info__block">
+                            <span class="about__info__block__left">Nationality</span>
+                            <span class="about__info__block__right">Korean-American</span>
+                        </div>
+                        <div class="about__info__block">
+                            <span class="about__info__block__left">Email</span>
+                            <span class="about__info__block__right lowercase">johndoe@gmail.com</span>
+                        </div>
+                        <div class="about__info__socials">
+                            <a href="#" class="about__info__socials__circle" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="about__info__socials__circle" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="about__info__socials__circle" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="about__info__socials__circle" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="about__info__socials__circle" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="nav__wrapper__ul">
-            <li class="nav__wrapper__ul__li">
-                <a href="#header" class="nav__wrapper__ul__li__a">Home</a>
-            </li>
-            <li class="nav__wrapper__ul__li">
-                <a href="#about" class="nav__wrapper__ul__li__a">about</a>
-            </li>
-            <li class="nav__wrapper__ul__li">
-                <a href="#experiance" class="nav__wrapper__ul__li__a">experiance</a>
-            </li>
-            <li class="nav__wrapper__ul__li">
-                <a href="#projects" class="nav__wrapper__ul__li__a">projects</a>
-            </li>
-            <li class="nav__wrapper__ul__li">
-                <a href="#skills" class="nav__wrapper__ul__li__a">skills</a>
-            </li>
-            <li class="nav__wrapper__ul__li">
-                <a href="#testimonials" class="nav__wrapper__ul__li__a">testimonials</a>
-            </li>
-            <li class="nav__wrapper__ul__li">
-                <a href="#blogs" class="nav__wrapper__ul__li__a">blogs</a>
-            </li>
-        </ul>
-        <div class="nav__wrapper__toggle"><i class="bi bi-justify-right"></i></div>
+        </section>
+        <section class="education" id="experience">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xlg-6 col-lg-12">
+                        <h1 class="heading">Education</h1>
+                        <div class="row education--row1">
+                            <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                                <div class="education__card">
+                                    <h3 class="education__card__title">Animated characterization</h3>
+                                    <div class="education__card__block">
+                                        <span class="education__card__block__left education__card__block__left--house">
+                                            <i class="fa-solid fa-microphone-lines"></i>
+                                        </span>
+                                        <span class="education__card__block__right">Disney Television Animations</span>
+                                    </div>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--calendar">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </span>
+                                    <span class="education__card__block__right">2012 - 2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                            <div class="education__card">
+                                <h3 class="education__card__title">Melodious vocalizing</h3>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--house">
+                                        <i class="fa-brands fa-spotify"></i>
+                                    </span>
+                                    <span class="education__card__block__right">Spotify</span>
+                                </div>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--calendar">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </span>
+                                    <span class="education__card__block__right">2015 - 2016</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                            <div class="education__card">
+                                <h3 class="education__card__title">Full-Stack Developing</h3>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--house">
+                                        <i class="fa-solid fa-code"></i>
+                                    </span>
+                                    <span class="education__card__block__right">Coding</span>
+                                </div>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--calendar">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </span>
+                                    <span class="education__card__block__right">2017 - 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                            <div class="education__card">
+                                <h3 class="education__card__title">Content Creating</h3>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--house">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </span>
+                                    <span class="education__card__block__right">Youtuber</span>
+                                </div>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--calendar">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </span>
+                                    <span class="education__card__block__right">2019 - 2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xlg-6 col-lg-12">
+                    <h1 class="heading">Experience</h1>
+                    <div class="row education--row2">
+                        <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                            <div class="education__card">
+                                <h3 class="education__card__title">Experienced Animator</h3>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--house">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                    </span>
+                                    <span class="education__card__block__right">Walt Disney Animation Studios</span>
+                                </div>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--calendar">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </span>
+                                    <span class="education__card__block__right">2021 - 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                            <div class="education__card">
+                                <h3 class="education__card__title">Underwater Explorer</h3>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--house">
+                                        <i class="fa-solid fa-water"></i>
+                                    </span>
+                                    <span class="education__card__block__right">NOAA</span>
+                                </div>
+                                <div class="education__card__block">
+                                    <span class="education__card__block__left education__card__block__left--calendar">
+                                        <i class="fa-solid fa-calendar"></i>
+                                    </span>
+                                    <span class="education__card__block__right">2023 - 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                            <div class="education__card">
+                                <h3 class="education__card__title">Oscar-winning Actor</h3>
+                                <div class="education__card__block">
+                                <span class="education__card__block__left education__card__block__left--house">
+                                    <i class="fa-solid fa-masks-theater"></i>
+                                </span>
+                                <span class="education__card__block__right">Disney Auditions</span>
+                            </div>
+                            <div class="education__card__block">
+                                <span class="education__card__block__left education__card__block__left--calendar">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </span>
+                                <span class="education__card__block__right">2025 - 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-12">
+                        <div class="education__card">
+                            <h3 class="education__card__title">Entertainment universe creator</h3>
+                            <div class="education__card__block">
+                                <span class="education__card__block__left education__card__block__left--house">
+                                    <i class="fa-solid fa-clapperboard"></i>
+                                </span>
+                                <span class="education__card__block__right">Disney TVA Development & Current Series</span>
+                            </div>
+                            <div class="education__card__block">
+                                <span class="education__card__block__left education__card__block__left--calendar">
+                                    <i class="fa-solid fa-calendar"></i>
+                                </span>
+                                <span class="education__card__block__right">2026 - Present</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
-<header class="header" id="header">
-   <div class="container">
-       <div class="row">
-           <div class="col-xlg-6 col-lg-6 col-md-12">
-               <div class="header__data">
-                   <div class="header__data__contents">
-                       <h5 class="header__data__contents__top">Welcome to</h5>
-                       <h1 class="header__data__contents__heading"><b>My Portfolio</b></h1>
-                       <h4 class="header__data__contents__bottom">AWS Certified Secure Portfolio</h4>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </div>
-</header>
+    </section>
+    <script src="./app.js"></script>
     </body>
 </html>
