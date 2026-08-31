@@ -7,6 +7,10 @@
   border-bottom: 0.1rem solid $gray-100;
   @include flexBox(center, null);
   z-index: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba($white, 0.75);
+
   &__wrapper {
     width: 100%;
     max-width: $maxWidth;

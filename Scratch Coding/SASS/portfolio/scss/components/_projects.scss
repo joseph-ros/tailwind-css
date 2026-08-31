@@ -1,91 +1,101 @@
 @use "../abstracts" as *;
+
 .projects {
-  padding: $padding-y 0;
+  padding-block: $padding-y;
+
   @include responsive(xsm) {
     padding-top: 4rem;
   }
+
   &__card {
+    position: relative;
     width: 100%;
     max-height: 27rem;
     overflow: hidden;
-    position: relative;
+    border-radius: 0;
+
     &__image {
       width: 100%;
-      height: 100%;
+      height: 20rem;
+
       img {
         @include imageCover;
+        transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        will-change: transform;
       }
     }
+
     &__layer {
       @include position(absolute, 0, 0, 0, 0);
-      width: 100%;
-      height: 100%;
-      background: $green-500;
       @include flexBox(center, center);
       flex-direction: column;
+      width: 100%;
+      height: 100%;
       padding: 1.5rem;
-      transform: scale(0);
-      transform-origin: 100% 100%;
-      transition: transform 0.5s ease-in-out;
+      background-color: $green-500;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.35s ease, visibility 0.35s ease;
+
       &__contents {
+        transform: translateY(-1.25rem);
+        transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+
         &__title {
           font-size: 1.6rem;
           font-weight: 600;
           color: $green-900;
           text-transform: capitalize;
         }
+
         &__tools {
           display: block;
           margin-top: 0.5rem;
           font-size: 1.2rem;
           font-weight: 600;
-          text-transform: uppercase;
           color: $green-700;
           text-align: center;
+          text-transform: uppercase;
         }
       }
+
       &__link {
         margin-top: 1rem;
+        transform: translateY(1.25rem);
+        transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+
         a {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
           text-decoration: none;
+
           i {
             color: $white;
             font-size: 2.5rem;
+            transition: transform 0.2s ease;
+          }
+
+          &:hover i {
+            transform: scale(1.15);
           }
         }
       }
     }
-    &:hover &__layer {
-      transform: scale(1);
-      animation: animateLayer 1s ease-in-out;
-      @keyframes animateLayer {
-        from {
-          border-radius: 50%;
-        }
-        to {
-          border-radius: 0;
-        }
+
+    &:hover,
+    &:focus-within {
+      .projects__card__image img {
+        transform: scale(1.06);
       }
-    }
-    &:hover &__layer__contents {
-      animation: animateContents 1s ease-in-out;
-      @keyframes animateContents {
-        from {
-          transform: translateY(-6rem);
-        }
-        to {
-          transform: translateY(0rem);
-        }
-      }
-    }
-    &:hover &__layer__link {
-      animation: animateLink 1s ease-in-out;
-      @keyframes animateLink {
-        from {
-          transform: translateY(6rem);
-        }
-        to {
-          transform: translateY(0rem);
+
+      .projects__card__layer {
+        opacity: 0.95;
+        visibility: visible;
+
+        &__contents,
+        &__link {
+          transform: translateY(0);
         }
       }
     }
