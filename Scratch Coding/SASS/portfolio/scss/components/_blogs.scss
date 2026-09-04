@@ -1,102 +1,195 @@
 @use "../abstracts" as *;
+
+@keyframes spin-hover {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes spin-unhover {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .blogs {
   padding: $padding-y 0;
+
   &__card {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: 0 1rem 1rem -1rem rgba(33, 35, 38, 0.1);
+    box-shadow: 0 0.5rem 1.5rem -0.5rem rgba(33, 35, 38, 0.1);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, box-shadow;
+
+    &:hover {
+      transform: translateY(-0.25rem);
+      box-shadow: 0 1.25rem 2rem -0.75rem rgba(33, 35, 38, 0.18);
+
+      .blogs__card__author__image::before {
+        animation: spin-hover 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+
+      .blogs__card__image img {
+        transform: scale(1.08);
+      }
+    }
+
     &__image {
       width: 100%;
-      height: 18rem;
+      aspect-ratio: 16 / 9;
+      height: auto;
       overflow: hidden;
       position: relative;
+
       @include responsive(sm) {
         height: 25rem;
+        aspect-ratio: auto;
       }
+
       @include responsive(xsm) {
         height: 18rem;
+        aspect-ratio: auto;
       }
-      &:hover img {
-        transform: scale(1.1);
-      }
+
       img {
         @include imageCover;
-        transition: transform 0.5s linear;
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform;
       }
+
       &__layer {
         @include position(absolute, 0, 0, 0, 0);
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.3);
-        padding: 1.5rem;
+        padding: 1.25rem;
         @include flexBox(null, flex-end);
+
         &__category {
           color: $white;
           text-transform: capitalize;
-          font-size: 1.4rem;
+          font-size: 1.3rem;
           font-weight: 600;
+          letter-spacing: 0.03em;
         }
       }
     }
+
     &__author {
       @include flexBox(null, center);
-      padding: 1rem;
+      padding: 1.25rem 1rem 0.75rem;
+      gap: 0.85rem;
+
       &__image {
         width: 4.5rem;
         height: 4.5rem;
-        overflow: hidden;
-        border-radius: 50%;
-        border: 0.3rem solid $green-500;
-        border-left-color: transparent;
-        border-right-color: transparent;
-        padding: 0.2rem;
+        flex-shrink: 0;
+        position: relative;
+        padding: 0.3rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          border: 0.3rem solid $green-500;
+          border-left-color: transparent;
+          border-right-color: transparent;
+          pointer-events: none;
+          animation: spin-unhover 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
         img {
           @include imageCover;
           border-radius: 50%;
+          display: block;
         }
       }
+
       &__details {
-        margin-left: 1rem;
         &__name {
           font-size: 1.3rem;
-          font-weight: 500;
+          font-weight: 600;
           text-transform: capitalize;
           color: $green-600;
+          line-height: 1.2;
         }
+
         &__date {
-          display: block;
+          display: flex;
+          align-items: center;
+          gap: 0.3rem;
+          margin-top: 0.2rem;
+
           i {
-            margin-right: 0.2rem;
             font-size: 1.2rem;
             color: $gray-500;
           }
+
           &__time {
             font-size: 1.1rem;
             font-weight: 500;
             text-transform: uppercase;
             color: $gray-500;
+            letter-spacing: 0.02em;
           }
         }
       }
     }
+
     &__body {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
+      padding: 0.5rem 1rem 1.25rem;
+
       &__title {
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.5rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
         a {
           font-size: 1.5rem;
           font-weight: 700;
+          line-height: 1.35;
           color: $gray-800;
           text-decoration: none;
         }
       }
+
       &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
         text-decoration: none;
         color: $gray-900;
         font-size: 1.3rem;
+        font-weight: 600;
+        transition: color 0.2s ease;
+
+        span {
+          display: inline-block;
+          font-size: 1.6rem;
+          font-weight: 700;
+          line-height: 1;
+          transition: transform 0.2s ease;
+        }
+
+        &:hover {
+          color: $green-600;
+
+          span {
+            transform: translateX(0.35rem);
+          }
+        }
       }
     }
   }

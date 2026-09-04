@@ -34,4 +34,17 @@
     background: $black;
     color: $white;
   }
+  &-green {
+    border: 2px solid $green-500;
+    border-radius: 3rem;
+    padding-bottom: 4.3rem;
+    background: $white;
+    color: $green-500;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background: $green-500;
+      color: $white;
+    }
+  }
 }
