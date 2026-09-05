@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import './_colors.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: $green-500;
+
+    &_items_logo a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &_items a {
+        color: $white;
+        text-decoration: none;
+    }
+}

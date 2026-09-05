@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #4CAF50;
+}
+.nav_list_items_logo a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav_list_items a {
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */
