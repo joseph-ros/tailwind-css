@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luma — Build what matters</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      :root {
+        --accent: #8b5cf6;
+        --cyan: #22d3ee;
+        --surface: #121a2a;
+        --soft: #192337;
+        --muted: #aab4c7;
+      }
+      body {
+        background: #0b1020;
+        color: #f5f7fb;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      .navbar-brand {
+        letter-spacing: -0.05em;
+        font-weight: 700;
+      }
+      .navbar {
+        background: rgba(11, 16, 32, 0.82);
+        backdrop-filter: blur(14px);
+      }
+      .navbar-brand {
+        font-size: 1.5rem;
+      }
+      .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--cyan);
+        margin-right: 7px;
+      }
+      .hero {
+        min-height: 92vh;
+        padding: 130px 0 90px;
+        display: flex;
+        align-items: center;
+        background:
+          radial-gradient(circle at 80% 30%, #44268155, transparent 35%),
+          radial-gradient(circle at 10% 80%, #087f9750, transparent 30%);
+      }
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--cyan);
+        font-size: 0.75rem;
+        font-weight: 700;
+      }
+      .gradient {
+        background: linear-gradient(
+          100deg,
+          var(--cyan),
+          var(--accent),
+          #ec4899
+        );
+        color: transparent;
+        background-clip: text;
+      }
+      .btn {
+        border-radius: 12px;
+        padding: 0.75rem 1.1rem;
+        font-weight: 600;
+      }
+      .btn-primary {
+        --bs-btn-bg: var(--accent);
+        --bs-btn-border-color: var(--accent);
+        --bs-btn-hover-bg: #7044df;
+      }
+      .glass,
+      .card-modern {
+        background: var(--surface);
+        border: 1px solid #ffffff1a;
+        border-radius: 22px;
+        padding: 28px;
+      }
+      .glass {
+        transform: rotate(2deg);
+        box-shadow: 0 25px 70px #0006;
+      }
+      .orb {
+        height: 180px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, #172554, #7e22ce);
+      }
+      .orb.two {
+        background: linear-gradient(135deg, #164e63, #047857);
+      }
+      section {
+        padding: 100px 0;
+      }
+      .soft {
+        background: var(--soft);
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .card-modern {
+        height: 100%;
+        transition: 0.25s;
+      }
+      .card-modern:hover {
+        transform: translateY(-6px);
+        border-color: var(--accent);
+      }
+      .icon {
+        font-size: 1.7rem;
+        color: var(--cyan);
+        margin-bottom: 20px;
+      }
+      .stat {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        font-weight: 700;
+      }
+      .quote {
+        border-left: 3px solid var(--accent);
+        padding-left: 24px;
+        font-size: 1.35rem;
+      }
+      .accordion-item,
+      .accordion-button {
+        background: var(--surface);
+        color: #f5f7fb;
+        border-color: #ffffff1a;
+      }
+      .accordion-button:not(.collapsed) {
+        background: var(--soft);
+        color: var(--cyan);
+        box-shadow: none;
+      }
+      .form-control {
+        background: var(--surface);
+        border-color: #ffffff1a;
+        color: white;
+        padding: 0.85rem;
+        border-radius: 10px;
+      }
+      .form-control:focus {
+        background: var(--surface);
+        color: white;
+        border-color: var(--accent);
+      }
+      footer {
+        border-top: 1px solid #ffffff1a;
+        padding: 30px 0;
+      }
+      @media (max-width: 768px) {
+        section {
+          padding: 70px 0;
+        }
+        .hero {
+          min-height: auto;
+        }
+        .glass {
+          margin-top: 35px;
+        }
+        .display-1 {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top border-bottom border-secondary border-opacity-10"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#home"><span class="dot"></span>luma</a
+        ><button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          ☰
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li><a class="nav-link" href="#work">Work</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#faq">FAQ</a></li>
+            <li>
+              <button class="btn btn-sm btn-outline-secondary" id="theme">
+                ☼
+              </button>
+            </li>
+            <li>
+              <a class="btn btn-primary btn-sm" href="#contact">Let's talk ↗</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <p class="eyebrow">Independent digital studio</p>
+              <h1 class="display-1">
+                Make your next<br /><span class="gradient">big thing</span>
+                matter.
+              </h1>
+              <p class="lead muted my-4">
+                We turn complex ideas into clear, memorable digital experiences
+                for ambitious teams.
+              </p>
+              <a class="btn btn-primary me-2" href="#contact"
+                >Start a project ↗</a
+              ><a class="btn btn-outline-light" href="#work">See our work</a>
+            </div>
+            <div class="col-lg-5">
+              <div class="glass">
+                <p class="eyebrow">Strategy / Design / Technology</p>
+                <h3 class="my-4">
+                  Ideas become<br /><span class="gradient">real things.</span>
+                </h3>
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-info" style="width: 75%"></div>
+                </div>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar"
+                    style="width: 55%; background: var(--accent)"
+                  ></div>
+                </div>
+                <small class="muted">luma.studio · 2025</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-4">
+        <div class="container">
+          <div class="row text-center muted fw-bold g-4">
+            <div class="col">NORTHSTAR</div>
+            <div class="col">KIN + CO</div>
+            <div class="col">ORBITAL</div>
+            <div class="col">VANTA</div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-lg-6">
+              <p class="eyebrow">What we do</p>
+              <h2 class="display-5">
+                Clarity at every<br />creative altitude.
+              </h2>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <p class="muted mt-lg-4">
+                Strategy, design and technology brought together under one roof.
+              </p>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card-modern">
+                <div class="icon">✦</div>
+                <h3>Strategy</h3>
+                <p class="muted">
+                  Research and roadmaps that make your direction unmistakable.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-modern">
+                <div class="icon">◈</div>
+                <h3>Design</h3>
+                <p class="muted">
+                  Identities and interfaces that feel as good as they function.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-modern">
+                <div class="icon">⌁</div>
+                <h3>Technology</h3>
+                <p class="muted">
+                  Fast, flexible digital products engineered to last.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="soft">
+        <div class="container">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="display-5 mb-5">Made to be remembered.</h2>
+          <div class="row g-4">
+            <div class="col-md-7">
+              <div class="card-modern orb">
+                <p class="eyebrow">01 / Orbital</p>
+                <h3 class="display-6 mt-5">A new orbit<br />for finance.</h3>
+                <p class="muted">Brand identity · Digital product</p>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card-modern orb two">
+                <p class="eyebrow">02 / Kin + Co</p>
+                <h3 class="display-6 mt-5">Good things,<br />well made.</h3>
+                <p class="muted">E-commerce · Campaign</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row text-center g-4">
+            <div class="col-6 col-lg-3">
+              <div class="stat">42</div>
+              <p class="muted">brands launched</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat">8.4m</div>
+              <p class="muted">people reached</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat">14</div>
+              <p class="muted">countries served</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <div class="stat">9 yrs</div>
+              <p class="muted">making things</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="soft">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+              <p class="eyebrow">The luma approach</p>
+              <h2 class="display-5">Small team.<br />Big attention.</h2>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <p class="quote">
+                “Luma helped us see the simplest, boldest version of what we
+                could become.”
+              </p>
+              <p class="muted">— Maya Chen, Founder at Northstar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <p class="eyebrow">Good to know</p>
+              <h2 class="display-5">Questions,<br />answered.</h2>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+              <div class="accordion" id="faqList">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q1"
+                    >
+                      What kind of projects do you take on?
+                    </button>
+                  </h2>
+                  <div
+                    id="q1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqList"
+                  >
+                    <div class="accordion-body muted">
+                      Brand, web and digital product projects from concept
+                      through launch.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q2"
+                    >
+                      How long does a project take?
+                    </button>
+                  </h2>
+                  <div
+                    id="q2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqList"
+                  >
+                    <div class="accordion-body muted">
+                      Most engagements run between six and twelve weeks.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#q3"
+                    >
+                      Do you work remotely?
+                    </button>
+                  </h2>
+                  <div
+                    id="q3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqList"
+                  >
+                    <div class="accordion-body muted">
+                      Absolutely. We collaborate globally with an async-friendly
+                      process.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="soft">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <p class="eyebrow">Have a good one?</p>
+              <h2 class="display-4">
+                Let's make it<br /><span class="gradient">happen.</span>
+              </h2>
+              <p class="muted">
+                Tell us what you're building. We reply within two working days.
+              </p>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <form>
+                <input
+                  class="form-control mb-3"
+                  placeholder="Your name"
+                /><input
+                  class="form-control mb-3"
+                  type="email"
+                  placeholder="Email address"
+                /><textarea
+                  class="form-control mb-3"
+                  rows="4"
+                  placeholder="Tell us about your project"
+                ></textarea
+                ><button class="btn btn-primary w-100">Send inquiry ↗</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container d-flex justify-content-between flex-wrap gap-3">
+        <span class="navbar-brand"><span class="dot"></span>luma</span
+        ><span class="muted">© 2025 Luma Studio</span
+        ><span>Instagram · LinkedIn</span>
+      </div>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+      const html = document.documentElement;
+      document.getElementById("theme").onclick = () => {
+        const light = html.dataset.bsTheme === "light";
+        html.dataset.bsTheme = light ? "dark" : "light";
+        document.body.style.background = light ? "#0b1020" : "#f8fafc";
+        document.body.style.color = light ? "#f5f7fb" : "#111827";
+      };
+    </script>
+  </body>
+</html>
