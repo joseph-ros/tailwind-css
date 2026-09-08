@@ -1,0 +1,23 @@
+/* Fonts */
+
+.f-poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.f-inter {
+    font-family: "Inter", sans-serif;
+}
+
+/* Text Colors */
+
+.text-cyan {
+    color: #00b8db;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .container {
+        width: 800px;
+    }
+}
