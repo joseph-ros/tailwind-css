@@ -1,0 +1,13 @@
+/* Custom Sizing */
+
+.mw-20 {
+    max-width: 20rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .container {
+        width: 600px;
+    }
+}
