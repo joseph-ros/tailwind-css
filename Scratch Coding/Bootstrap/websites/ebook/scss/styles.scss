@@ -1,0 +1,45 @@
+html {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+.navbar .btn-outline-light:hover {
+    color: var(--bs-dark);
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-sticky {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    background: url(../images/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#wave {
+    display: block;
+    margin-bottom: -1px;
+}
+
+.text-indent {
+    text-indent: 2.5rem;
+}
+
+.modal-dialog {
+    max-width: 1040px;
+}

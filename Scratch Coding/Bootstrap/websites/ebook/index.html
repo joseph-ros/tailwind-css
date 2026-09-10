@@ -3,20 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ebook | Read Books Online</title>
+    <title>Blog Mastery | Create Professional Blogs</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
     <link rel="icon" href="images/favicon.png"/>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <body class="smooth-scroll">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
-        <a href="index.html" class="navbar-brand">
-          <img src="images/logo.png" alt="Logo" width="225"></a>
+        <a href="index.html" class="navbar-brand" height="32px">
+          <img src="images/logo.png" alt="Logo" width="225">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link fw-semibold">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#details" class="nav-link fw-semibold">Details</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link btn btn-outline-light fw-semibold px-4 mx-4">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+    <header class="header">
+      <div class="hero text-white pt-7">
+        <div class="container-xl">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-container mb-5 px-4">
+                <img src="./images/header-ebook.png" alt="Hero Image" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-container p-4 d-flex flex-column justify-content-center h-100 mb-5">
+                <h1 class="display-3 fw-bold">Welcome to Blog Mastery</h1>
+                <p class="lead text-indent">Are you ready to take your blogging journey to new heights? Blog Mastery is your ultimate guide to creating and managing a successful blog that captivates your audience and drives engagement.</p>
+                <div class="form-container text-center">
+                  <form>
+                    <div class="my-4">
+                      <input type="email" class="form-control form-control-lg ps-5 rounded-pill" placeholder="Email Address...">
+                    </div>
+                    <div class="d-grid">
+                      <button class="btn btn-primary text-white fw-bold fs-5">Free Download</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg id="wave" style="transform: rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120" version="1.1" xmlns="http://www.w3.org/2000/svg" class="translateBelow">
+        <path style="transform: translate(0, 0px); opacity: 1" fill="#f3f6f9" d="M0,12L40,26C80,40,160,68,240,72C320,76,400,56,480,46C560,36,640,36,720,46C800,56,880,76,960,78C1040,80,1120,64,1200,48C1280,32,1360,16,1440,14C1520,12,1600,24,1680,32C1760,40,1840,44,1920,54C2000,64,2080,80,2160,76C2240,72,2320,48,2400,34C2480,20,2560,16,2640,30C2720,44,2800,76,2880,80C2960,84,3040,60,3120,48C3200,36,3280,36,3360,42C3440,48,3520,60,3600,54C3680,48,3760,24,3840,16C3920,8,4000,16,4080,26C4160,36,4240,48,4320,46C4400,44,4480,28,4560,36C4640,44,4720,76,4800,78C4880,80,4960,52,5040,38C5120,24,5200,24,5280,22C5360,20,5440,16,5520,28C5600,40,5680,68,5720,82L5760,96L5760,120L5720,120C5680,120,5600,120,5520,120C5440,120,5360,120,5280,120C5200,120,5120,120,5040,120C4960,120,4880,120,4800,120C4720,120,4640,120,4560,120C4480,120,4400,120,4320,120C4240,120,4160,120,4080,120C4000,120,3920,120,3840,120C3760,120,3680,120,3600,120C3520,120,3440,120,3360,120C3280,120,3200,120,3120,120C3040,120,2960,120,2880,120C2800,120,2720,120,2640,120C2560,120,2480,120,2400,120C2320,120,2240,120,2160,120C2080,120,2000,120,1920,120C1840,120,1760,120,1680,120C1600,120,1520,120,1440,120C1360,120,1280,120,1200,120C1120,120,1040,120,960,120C880,120,800,120,720,120C640,120,560,120,480,120C400,120,320,120,240,120C160,120,80,120,40,120L0,120Z"></path>
+      </svg>
+    </header>
+    <section class="icons bg-light pb-5">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-md-4 d-flex gap-4">
+            <i class="fa-solid fa-user fa-3x text-primary"></i>
+            <div>
+              <h5 class="fw-bold">Unlock Your Blogging Potential</h5>
+              <p class="text-muted">Discover the key to unleashing your true blogging potential. Our ebook provides expert guidance on creating compelling content.</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex gap-4">
+            <i class="fa-solid fa-rocket fa-3x text-secondary"></i>
+            <div>
+              <h5 class="fw-bold">Skyrocket Your Blog's Success</h5>
+              <p class="text-muted">Take your blog to new heights with our proven strategies for driving traffic and increasing your blog's visibility.</p>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex gap-4">
+            <i class="fa-solid fa-dollar-sign fa-3x text-primary"></i>
+            <div>
+              <h5 class="fw-bold">Monetize Your Blog</h5>
+              <p class="text-muted">Turn your passion for blogging into a profitable venture. Our ebook reveals tried-and-tested monetization strategies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="details" class="details my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text-container d-flex flex-column justify-content-center h-100">
+              <h2 class="display-6 fw-bold py-4 fs-3">Unlock Your Blogging Potential</h2>
+              <p class="text-indent">Are you ready to unleash your true blogging potential? Our ebook, <strong>"Blog Mastery,"</strong> provides you with the tools and knowledge to take your blog to the next level.</p>
+              <ul class="list-group list-group-flush lh-lg fs-6">
+                <li class="list-group-item">
+                  <i class="fa-solid fa-square-check text-primary"></i> <strong>Unleash Your Creativity:</strong> Our ebook empowers you to unleash your creativity and express your unique voice through your blog.
+                </li>
+                <li class="list-group-item">
+                  <i class="fa-solid fa-square-check text-primary"></i> <strong>Maximize Your Reach:</strong> Learn how to optimize your blog for search engines.
+                </li>
+                <li class="list-group-item">
+                  <i class="fa-solid fa-square-check text-primary"></i> <strong>Monetization Strategies:</strong> Discover various monetization strategies, such as sponsored content & affiliate marketing.
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary text-white mt-4 align-self-start">Get Your Copy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
   <script src="bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
