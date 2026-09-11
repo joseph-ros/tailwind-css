@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 .navbar-sticky {
     opacity: 0.9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
@@ -42,4 +42,51 @@ body::-webkit-scrollbar {
 
 .modal-dialog {
     max-width: 1040px;
+}
+
+.mw-50 {
+    max-width: 12rem !important;
+}
+
+.mh-50 {
+    max-height: 12rem !important;
+}
+
+.rounded-pill-start {
+    border-top-left-radius: var(--bs-border-radius-pill) !important;
+    border-bottom-left-radius: var(--bs-border-radius-pill) !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.download {
+    background: url('../images/download-background.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.map iframe {
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    border: none;
+}
+
+.cls-1 {
+    fill: #f3f6f9;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        background: var(--bs-dark);
+    }
+
+    .hero .image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero .text-container {
+        text-align: center;
+    }
 }
