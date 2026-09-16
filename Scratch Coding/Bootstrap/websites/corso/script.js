@@ -4,8 +4,10 @@ function userScroll() {
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('bg-dark');
+            navbar.classList.add('border-bottom');
         } else {
             navbar.classList.remove('bg-dark');
+            navbar.classList.remove('border-bottom');
         }
     });
 }

@@ -64,6 +64,17 @@ body::-webkit-scrollbar {
 .invitation-bg {
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/invitation-background.jpg') center center no-repeat;
   background-size: cover;
+  width: 120% !important;
+  margin-left: -7rem !important;
+}
+
+.takeaways {
+  background: linear-gradient(to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)),
+    url('../images/header-background.jpg') center center fixed no-repeat;
+  background-size: cover;
+  top: 0;
 }
 
 @media (max-width: 992px) {
@@ -96,6 +107,11 @@ body::-webkit-scrollbar {
 
   .summary {
     margin-top: 0 !important;
+    width: 95% !important;
+  }
+
+  .invitation {
     width: 90% !important;
+    margin-left: 6rem;
   }
 }
