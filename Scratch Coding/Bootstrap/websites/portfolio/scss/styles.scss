@@ -1,3 +1,15 @@
+html {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
 .header {
   background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
   background-size: cover;
@@ -19,7 +31,8 @@
 }
 
 .header .roles {
-  font-family: 'lora-regular', serif;
+  margin-top: 2rem;
+  letter-spacing: 0.5rem;
 }
 
 .header .social {
