@@ -1,7 +1,7 @@
 function runTypingEffect() {
   const text = 'Welcome To My Portfolio';
   const typingElement = document.getElementById('typing-text');
-  const typingDelay = 100;
+  const typingDelay = 70;
   typeText(text, typingElement, typingDelay);
 }
 
