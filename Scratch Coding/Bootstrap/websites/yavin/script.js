@@ -20,16 +20,12 @@ function scrollToTop() {
 
 function incrementStats() {
   const counters = document.querySelectorAll('.counter');
-
   counters.forEach((counter) => {
     counter.innerText = 0;
-
     const updateCounter = () => {
       const target = +counter.getAttribute('data-target');
       const c = +counter.innerText;
-
       const increment = target / 200;
-
       if (c < target) {
         counter.innerText = Math.ceil(c + increment);
         setTimeout(updateCounter, 1);
@@ -37,12 +33,10 @@ function incrementStats() {
         counter.innerText = target;
       }
     };
-
     updateCounter();
   });
 }
 
-// Event Listeners
 document.addEventListener('DOMContentLoaded', userScroll);
 document.addEventListener('DOMContentLoaded', incrementStats);
 document.querySelector('#to-top').addEventListener('click', scrollToTop);
