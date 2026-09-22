@@ -14,6 +14,10 @@ body::-webkit-scrollbar {
   font-size: 75px;
 }
 
+.text-indent {
+  text-indent: 1.5rem;
+}
+
 .btn-outline-secondary {
   color: var(--bs-secondary);
 }
@@ -86,11 +90,22 @@ body::-webkit-scrollbar {
   width: 18px;
 }
 
+.details-2 .details-heading {
+  line-height: 3rem;
+}
+
 .show {
   opacity: 1;
 }
 
 @media (max-width: 992px) {
+  .get-started {
+    width: 100%;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+  }
   .xl-text {
     font-size: 50px;
   }
@@ -102,24 +117,56 @@ body::-webkit-scrollbar {
     text-align: center;
   }
   .header .decoration-star {
-    left: -100px;
-    width: 250px;
+    left: -250px;
+    width: 500px;
   }
   .header .decoration-star-2 {
-    right: -100px;
-    width: 250px;
+    width: 410px;
+    top: 600px;
   }
   .header .image-container {
     margin-top: 30px;
   }
+  .details .decoration-star {
+    top: -300px;
+    left: -300px;
+    width: 600px;
+  }
+  .details .details-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .details .details-list-items {
+    color: #000;
+    font-size: 1.2rem;
+  }
   .services .col-md-4 {
     border-bottom: 1px #ccc solid;
     margin: 10px 0;
+  }
+  .services .services-heading {
+    font-size: 2.5rem;
+  }
+  .services .services-paragraph {
+    color: #000;
+    font-size: 1.2rem;
   }
   .details-2 {
     margin-top: 20px !important;
   }
   .details-2 .decoration-star {
     top: 300px;
+  }
+  .details-2 .details-heading {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+  .details-2 .details-paragraph {
+    color: #000;
+    font-size: 1.2rem;
   }
 }
