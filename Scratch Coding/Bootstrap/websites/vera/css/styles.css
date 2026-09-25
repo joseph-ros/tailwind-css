@@ -3,8 +3,7 @@
 }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
-    url('../images/header-background.jpg') left center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/header-background.jpg") left center no-repeat;
   background-size: cover;
   height: 600px;
 }
@@ -44,7 +43,6 @@
   width: 24px;
 }
 
-// Video Play Button
 .video-play-button {
   position: absolute;
   z-index: 10;
@@ -61,7 +59,7 @@
 }
 
 .video-play-button:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 0;
   top: 50%;
@@ -77,7 +75,7 @@
 }
 
 .video-play-button:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -100,7 +98,6 @@
   left: 4px;
   width: 0;
   height: 0;
-  // Draw button
   border-left: 26px solid #fff;
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
@@ -111,13 +108,11 @@
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
     opacity: 1;
   }
-
   100% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
   }
 }
-
 .video-modal .modal-dialog {
   max-width: 1150px;
   margin-top: 20px;
@@ -132,18 +127,14 @@
   .xl-text {
     font-size: 50px;
   }
-
   .header {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)),
-      url('../images/header-background.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../images/header-background.jpg") center center no-repeat;
   }
-
   .video-points {
     padding: 0 !important;
     text-align: center;
   }
-
   .video-points .col-lg-4 {
     margin-bottom: 20px;
   }
