@@ -284,41 +284,133 @@
         </div>
     </section>
     <section id="testimonials" class="testimonials bg-light py-6">
-        <div id="testimonialCarousel" class="carousel slide">
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
                         <img src="images/testimonial-1.jpg" alt="" class="rounded-circle" width="120" />
-                        <p class="w-50 my-4 fst-italic fs-4 mb-4">“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates rerum nesciunt aliquam odio vitae magni consequatur error inventore ipsum illo, nam eligendi voluptatum laboriosam beatae et atque alias iste nobis excepturi eaque, libero deserunt, voluptas perferendis accusantium. Doloribus asperiores minus odit suscipit, amet ipsa soluta consectetur molestiae culpa placeat ullam aut nemo?”</p>
-                        <div class="fw-bold fs-5 mt-4">Marlene Visconte</div>
+                        <p class="w-50 my-4 fst-italic fs-4 mb-4">“Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Voluptates rerum nesciunt aliquam odio vitae magni consequatur error inventore ipsum
+                            illo, nam eligendi voluptatum laboriosam beatae et atque alias iste nobis excepturi eaque,
+                            libero deserunt, voluptas perferendis accusantium. Doloribus asperiores minus odit suscipit,
+                            amet ipsa soluta consectetur molestiae culpa placeat ullam aut nemo?”</p>
+                        <div class="fw-bold fs-5 mt-4">Michael E. Smith</div>
                         <div>General Manager - Scouter</div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
                         <img src="images/testimonial-2.jpg" alt="" class="rounded-circle" width="120" />
-                        <p class="w-50 my-4 fst-italic fs-4 mb-4">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, vitae dolores. Ipsam dolor eaque accusamus culpa soluta. Repellendus, qui! Quidem ipsa possimus adipisci sit non libero labore sunt facilis, assumenda sapiente consectetur velit? Cum beatae consequatur dignissimos adipisci magni aspernatur dolore ratione sequi numquam id?”</p>
-                        <div class="fw-bold fs-5 mt-4">John Spiker</div>
+                        <p class="w-50 my-4 fst-italic fs-4 mb-4">“Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, vitae dolores. Ipsam dolor eaque accusamus culpa soluta. Repellendus, qui!
+                            Quidem ipsa possimus adipisci sit non libero labore sunt facilis, assumenda sapiente
+                            consectetur velit? Cum beatae consequatur dignissimos adipisci magni aspernatur dolore
+                            ratione sequi numquam id?”</p>
+                        <div class="fw-bold fs-5 mt-4">John Dean</div>
                         <div>Team Leader - Vanquish</div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
                         <img src="images/testimonial-3.jpg" alt="" class="rounded-circle" width="120" />
-                        <p class="w-50 my-4 fst-italic fs-4 mb-4">“Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias eligendi voluptatum ipsum facere repellat enim consequatur beatae architecto neque veritatis placeat quis sunt, obcaecati corporis fuga quaerat saepe sit corrupti error tenetur sequi eaque asperiores ad? Qui, recusandae dolorem omnis alias officiis adipisci eaque vitae modi vel, inventore, ipsa minima facere.”</p>
-                        <div class="fw-bold fs-5 mt-4">Stella Virtuoso</div>
+                        <p class="w-50 my-4 fst-italic fs-4 mb-4">“Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Alias eligendi voluptatum ipsum facere repellat enim consequatur beatae architecto
+                            neque veritatis placeat quis sunt, obcaecati corporis fuga quaerat saepe sit corrupti error
+                            tenetur sequi eaque asperiores ad? Qui, recusandae dolorem omnis alias officiis adipisci
+                            eaque vitae modi vel, inventore, ipsa minima facere.”</p>
+                        <div class="fw-bold fs-5 mt-4">Anne Lee</div>
                         <div>Design Chief - Bikegirl</div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
                 <i class="fa-solid fa-arrow-circle-left fa-3x text-secondary"></i>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
                 <i class="fa-solid fa-arrow-circle-right fa-3x text-secondary"></i>
             </button>
         </div>
     </section>
+    <section id="contact" class="contact my-6 position-relative">
+        <img src="images/decoration-star.svg" alt="Yavin Office Designer" class="decoration-star position-absolute" />
+        <div class="container position-relative z-3">
+            <div class="row">
+                <div class="col-lg-6 d-none d-md-block">
+                    <div class="image-container">
+                        <img src="images/contact.png" alt="Yavin Office Designer" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2 class="contact-heading mb-5">Contact Us</h2>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Name" />
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email" />
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Phone Number" />
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Your Message" rows="8"></textarea>
+                            </div>
+                            <div class="d-grid gap-2">
+                                <input type="submit" value="Send" class="btn btn-primary btn-block get-started" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-light py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 my-3">
+                    <img src="./images/logo.svg" alt="Yavin Office Designer" width="150rem" class="mb-3">
+                    <p class="text-indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum hic velit perferendis? Assumenda, placeat! Eos, corporis accusantium incidunt, beatae quod minima veniam, perferendis ex ipsa distinctio fugit consequuntur iste magni?</p>
+                </div>
+                <div class="col-md-4 my-3">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            Important: <a href="./article.html">Terms & Conditions</a>,
+                            <a href="./article.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            Useful: <a href="https://fontawesome.com/" target="_blank">Icon Library</a>,
+                            <a href="#">Illustrations</a>
+                        </li>
+                        <li>
+                            Menu: <a href="#">Home</a>, <a href="#details">Details</a>,
+                            <a href="#services">Services</a>, <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 my-3">
+                    <div class="mb-4">
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-square-facebook fa-4x text-dark link-primary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-square-x-twitter fa-4x text-dark link-secondary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-square-deskpro fa-4x text-dark link-primary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <i class="fa-brands fa-square-pinterest fa-4x text-dark link-secondary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                        </a>
+                    </div>
+                    <p>We would love to hear from you <a href="mailto:contact@yavin.officedesigner.com"><strong>contact@yavin.officedesigner.com</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <button id="to-top" class="to-top-btn">
         <img src="images/up-arrow.png" alt="Back To Top" />
     </button>
