@@ -468,11 +468,12 @@
             </div>
         </div>
         <div class="video-modal">
-            <div id="videoModal" class="modal fade">
-                <div class="modal-dialog">
+            <div id="videoModal" class="modal fade" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="ratio ratio-16x9">
-                            <iframe frameborder="0" class="embed-responsive-item" id="video"></iframe>
+                            <iframe frameborder="0" class="embed-responsive-item" id="video"
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -843,8 +844,9 @@
                     <div class="col-md-4 my-3">
                         <img src="./images/logo.svg" alt="About Vera" style="width: 10rem; margin-bottom: 2rem;">
                         <p>
-                            Vera is a dedicated software solutions company that aims to provide
-                            exceptional services to its clients. We are committed to delivering
+                            <span class="text-primary fw-semibold">Vera is a dedicated software solutions company that
+                                aims to provide
+                                exceptional services to its clients.</span> We are committed to delivering
                             innovative and customized solutions that meet your specific business
                             needs.
                         </p>
@@ -871,16 +873,20 @@
                     <div class="col-md-4 my-3">
                         <div class="mb-4">
                             <a href="#" class="text-decoration-none">
-                                <i class="fa-brands fa-facebook fa-3x text-light link-primary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                                <i class="fa-brands fa-square-facebook fa-4x text-light link-primary mx-2"
+                                    style="transition: all 0.3s ease-in-out;"></i>
                             </a>
                             <a href="#" class="text-decoration-none">
-                                <i class="fa-brands fa-twitter fa-3x text-light link-primary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                                <i class="fa-brands fa-square-x-twitter fa-4x text-light link-primary mx-2"
+                                    style="transition: all 0.3s ease-in-out;"></i>
                             </a>
                             <a href="#" class="text-decoration-none">
-                                <i class="fa-brands fa-instagram fa-3x text-light link-primary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                                <i class="fa-brands fa-square-deskpro fa-4x text-light link-primary mx-2"
+                                    style="transition: all 0.3s ease-in-out;"></i>
                             </a>
                             <a href="#" class="text-decoration-none">
-                                <i class="fa-brands fa-pinterest fa-3x text-light link-primary mx-2" style="transition: all 0.3s ease-in-out;"></i>
+                                <i class="fa-brands fa-square-pinterest fa-4x text-light link-primary mx-2"
+                                    style="transition: all 0.3s ease-in-out;"></i>
                             </a>
                         </div>
                         <p>
