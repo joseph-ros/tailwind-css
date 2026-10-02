@@ -14,6 +14,10 @@ body::-webkit-scrollbar {
   font-size: 65px;
 }
 
+.text-indent {
+  text-indent: 1.5rem;
+}
+
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("../images/header-background.jpg") left center no-repeat;
   background-size: cover;
