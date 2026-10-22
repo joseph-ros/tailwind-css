@@ -4,6 +4,11 @@
   position: sticky;
 }
 
+.f-kanit-italic {
+  font-family: "Kanit", sans-serif;
+  font-style: italic;
+}
+
 .header-container {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/asphalt-test.gif);
   background-repeat: no-repeat;
@@ -32,6 +37,30 @@ h1 {
   color: #c501fb !important;
 }
 
+.bg-secondary {
+  background-color: #9246ff !important;
+}
+
+.text-secondary {
+  color: #9246ff !important;
+}
+
+.bg-dark {
+  background-color: #1A1126 !important;
+}
+
+.text-light {
+  color: #aba2bd !important;
+}
+
+.cta-bg {
+  background-color: #bf36ff !important;
+}
+
+.cta-text {
+  color: #11051c !important;
+}
+
 .icon-rounded {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
@@ -41,4 +70,10 @@ h1 {
 
 .text-indent {
   text-indent: 1.5rem !important;
+}
+
+.social {
+  background-image: url(../images/social-bg.jpg);
+  height: fit-content;
+  width: 100%;
 }
