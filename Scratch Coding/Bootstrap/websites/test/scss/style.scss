@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -16px;
-    height: 50rem;
+    height: 51rem;
 }
 
 .p-10 {
@@ -61,6 +61,10 @@ h1 {
     color: #11051c !important;
 }
 
+.fs-1 {
+    font-size: 3rem !important;
+}
+
 .icon-rounded {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
@@ -72,8 +76,51 @@ h1 {
     text-indent: 1.5rem !important;
 }
 
+.active {
+    color: #9246ff !important;
+}
+
+.details-badge {
+    width: 20rem;
+}
+
 .social {
     background-image: url(../images/social-bg.jpg);
-    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 32rem;
     width: 100%;
+    margin-top: 10rem;
+}
+
+.square-icon {
+    background-color: #0f0f0f;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.square-icon:hover {
+    background-color: #fff !important;
+}
+
+.square-icon-items {
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+}
+
+.square-icon:hover i.square-icon-items,
+.square-icon:hover .square-icon-items {
+    color: #0f0f0f !important;
+}
+
+.social_cars img {
+    width: 100rem !important;
+    margin-left: -8rem !important;
+    margin-bottom: -20rem !important;
 }
