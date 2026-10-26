@@ -59,6 +59,7 @@ h1 {
 
 .cta-text {
     color: #11051c !important;
+    cursor: pointer;
 }
 
 .fs-1 {
@@ -76,12 +77,25 @@ h1 {
     text-indent: 1.5rem !important;
 }
 
+.nav_list_items {
+    transition: 0.2s all ease-in-out;
+}
+
+.nav_list_items:hover {
+    color: #9246ff;
+    cursor: pointer;
+}
+
 .active {
     color: #9246ff !important;
 }
 
 .details-badge {
     width: 20rem;
+}
+
+.details-paragraph {
+    max-width: 50rem;
 }
 
 .social {
