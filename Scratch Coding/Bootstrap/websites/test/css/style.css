@@ -55,11 +55,16 @@ h1 {
 
 .cta-bg {
   background-color: #bf36ff !important;
-}
-
-.cta-text {
+  border: 2px solid #bf36ff !important;
   color: #11051c !important;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.cta-bg:hover {
+  background-color: #11051c !important;
+  color: #bf36ff !important;
+  border: 2px solid #bf36ff !important;
 }
 
 .fs-1 {
@@ -82,7 +87,7 @@ h1 {
 }
 
 .nav_list_items:hover {
-  color: #9246ff;
+  color: #bf36ff;
   cursor: pointer;
 }
 
@@ -137,4 +142,42 @@ h1 {
   width: 100rem !important;
   margin-left: -8rem !important;
   margin-bottom: -20rem !important;
+}
+
+.footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15rem;
+  height: 55rem;
+}
+
+.footer-img {
+  margin-top: 15rem;
+  margin-bottom: 3rem;
+}
+
+.footer-p {
+  margin-top: 15rem;
+  margin-left: 20rem;
+  margin-bottom: 3rem;
+}
+
+.footer-hr {
+  height: 0.15rem;
+  width: 90rem;
+  margin: 0 auto;
+  background-color: #927bfa !important;
+}
+
+.footer-updates-heading {
+  white-space: nowrap;
+}
+
+.footer-cta {
+  width: fit-content;
+}
+
+.footer-social {
+  margin-left: 15rem;
 }
