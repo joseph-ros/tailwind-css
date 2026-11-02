@@ -70,7 +70,13 @@ header {
 }
 
 #calc-actions button {
-  width: 4rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
 }
 
 #calc-actions {
