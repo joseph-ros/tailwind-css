@@ -9,7 +9,7 @@ body {
 
 h1 {
   background: #fa923f;
-  color: white;
+  color: #fff;
   padding: 1rem;
 }
 
@@ -34,7 +34,7 @@ li:before {
   margin-right: 0.5rem;
   padding: 1rem;
   background: #521751;
-  color: white;
+  color: #fff;
   position: absolute;
   left: -2.75rem;
   top: -1px;
@@ -44,6 +44,6 @@ li:before {
 li:hover,
 li:active {
   border-color: #fa923f;
-  color: white;
+  color: #fff;
   background: #fa923f;
 }

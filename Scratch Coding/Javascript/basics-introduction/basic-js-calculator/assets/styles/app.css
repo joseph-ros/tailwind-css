@@ -12,7 +12,7 @@ body {
 
 header {
   background: #023d6d;
-  color: white;
+  color: #fff;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -54,7 +54,7 @@ header {
 #calculator button {
   font: inherit;
   background: #023d6d;
-  color: white;
+  color: #fff;
   border: 1px solid #023d6d;
   padding: 1rem;
   cursor: pointer;
