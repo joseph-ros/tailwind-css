@@ -25,7 +25,7 @@ function writeToLog(operationIdentifier, prevResult, operationNumber, newResult)
 function add() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult + enteredNumber;
+    currentResult += enteredNumber;
     createAndWriteOutput('+', initialResult, enteredNumber);
     writeToLog('ADD', initialResult, enteredNumber, currentResult);
 }
@@ -33,7 +33,7 @@ function add() {
 function subtract() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult - enteredNumber;
+    currentResult -= enteredNumber;
     createAndWriteOutput('-', initialResult, enteredNumber);
     writeToLog('SUBTRACT', initialResult, enteredNumber, currentResult);
 }
@@ -41,7 +41,7 @@ function subtract() {
 function multiply() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult * enteredNumber;
+    currentResult *= enteredNumber;
     createAndWriteOutput('*', initialResult, enteredNumber);
     writeToLog('MULTIPLY', initialResult, enteredNumber, currentResult);
 }
@@ -49,7 +49,7 @@ function multiply() {
 function divide() {
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
-    currentResult = currentResult / enteredNumber;
+    currentResult /= enteredNumber;
     createAndWriteOutput('/', initialResult, enteredNumber);
     writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
 }
